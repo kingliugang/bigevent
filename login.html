@@ -30,14 +30,14 @@
                         autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
-                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-sumbit>登录</button>
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit>登录</button>
                 </div>
                 <div class="layui-form-item links"> <a href="javascript:;" id="link-reg">去注册账号</a></div>
             </form>
         </div>
         <!-- 注册 -->
         <div class="reg-box">
-            <form class="layui-form" action="">
+            <form class="layui-form" action="" id="form-reg">
                 <!-- 用户名 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
@@ -51,13 +51,13 @@
                 </div>
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="repassword" required lay-verify="required|pwd" placeholder="再次确认密码"
-                        autocomplete="off" class="layui-input">
+                    <input type="password" name="repassword" required lay-verify="required|pwd|repwd"
+                        placeholder="再次确认密码" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
-                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-sumbit>注册</button>
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit>注册</button>
                 </div>
-                <div class="layui-form-item links"> <a href="javascript:;" id="link-login">去登录账号</a></div>
+                <div class="layui-form-item links"> <a href="javascript:;" id="link-login" id="link-login">去登录账号</a></div>
             </form>
         </div>
     </div>
