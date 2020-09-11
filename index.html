@@ -28,17 +28,17 @@
                         <dd><a href="">重置密码</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href=""><span class="iconfont icon-tuichu"></span>退出</a></li>
+                <li class="layui-nav-item"><a href="javascript:;" id="btnLoginout"><span class="iconfont icon-tuichu"></span>退出</a></li>
             </ul>
         </div>
-
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <div class="userinfo">
                     <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    <span class="text-avatar">A</span>
                     <span id="welcome">
-                        <span class="text-avatar">A</span>欢迎**</span>
+                    </span>
                 </div>
                 <ul class="layui-nav layui-nav-tree" lay-shrink="all">
                     <li class="layui-nav-item layui-this"><a href="/home/dashboard.html" target="fm"><span
@@ -62,7 +62,6 @@
                 </ul>
             </div>
         </div>
-
         <div class="layui-body">
             <!-- 内容主体区域 -->
             <iframe src="/home/dashboard.html" frameborder="0" name="fm"></iframe>
@@ -74,6 +73,9 @@
         </div>
     </div>
     <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/js/baseAPI.js"></script>
+    <script src="/assets/js/index.js"></script>
 </body>
 
 </html>
