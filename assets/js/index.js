@@ -7,6 +7,7 @@ $(function () {
             localStorage.removeItem('token')
             location.href = '/login.html'
             layer.close(index)
+            getUserinfo()
         })
     })
 })
@@ -22,13 +23,13 @@ function getUserinfo() {
         }
     })
 }
-//渲染头像
 function renderAvatar(user) {
     var name = user.nickname || user.username
     $('#welcome').html('欢迎' + name)
     if (user.user_pic !== null) {
         //图片头像
-        $('.layui-nav-img').attr('src', user_pic).show()
+        $('.layui-nav-img').attr('src', user.user_pic).show()
+        $('.text-avatar').hide()
     } else {
         //文本
         $('.layui-nav-img').hide()
